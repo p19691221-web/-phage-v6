@@ -6,67 +6,19 @@
 <title>WOKE GLOBAL | PHAGE v6</title>
 
 <style>
-html{
-  scroll-behavior:smooth;
-}
-
 body{
   margin:0;
   background:#000;
   color:#00ff66;
-  font-family:Arial, Helvetica, sans-serif;
-  line-height:1.7;
-}
-
-header{
-  padding:60px 28px 35px;
-}
-
-.logo{
-  font-size:58px;
-  font-weight:900;
-  letter-spacing:1px;
-  text-shadow:
-    0 0 10px #00ff66,
-    0 0 25px #00ff66,
-    0 0 55px #00ff66;
-}
-
-.subtitle{
-  font-size:20px;
-  color:#8cffbf;
-  margin-top:10px;
-}
-
-nav{
-  padding:0 28px 35px;
-}
-
-nav a{
-  display:inline-block;
-  color:#00ff66;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:bold;
-  margin:0 22px 12px 0;
-}
-
-nav a:hover{
-  color:white;
-  text-shadow:0 0 15px #00ff66;
-}
-
-section{
-  margin:28px;
-  padding:34px 28px;
-  border:1px solid #00ff66;
-  box-shadow:0 0 18px rgba(0,255,102,.25);
+  font-family:Arial, sans-serif;
+  padding:38px;
+  line-height:1.8;
 }
 
 h1{
-  font-size:48px;
-  margin-top:0;
-  text-shadow:0 0 18px #00ff66;
+  font-size:56px;
+  text-shadow:0 0 22px #00ff66;
+  margin-bottom:10px;
 }
 
 h2{
@@ -74,199 +26,165 @@ h2{
   margin-top:0;
 }
 
+h3{
+  font-size:24px;
+}
+
 p,li{
-  font-size:19px;
+  font-size:21px;
 }
 
-ul{
-  padding-left:24px;
+nav{
+  margin:35px 0 55px;
 }
 
-.button{
+nav a{
+  color:#00ff66;
+  text-decoration:none;
+  font-size:22px;
+  font-weight:bold;
+  margin-right:28px;
+}
+
+section{
+  border:1px solid #00ff66;
+  padding:36px;
+  margin-bottom:34px;
+  box-shadow:0 0 18px rgba(0,255,102,0.25);
+}
+
+button,.btn{
   display:inline-block;
-  margin-top:18px;
-  padding:14px 26px;
   background:#00ff66;
   color:#000;
-  text-decoration:none;
+  padding:18px 34px;
+  font-size:20px;
   font-weight:bold;
-  border-radius:4px;
-}
-
-.button:hover{
-  background:white;
-  box-shadow:0 0 20px #00ff66;
+  text-decoration:none;
+  margin-top:20px;
 }
 
 .dashboard{
-  background:#031307;
+  background:rgba(0,255,102,0.08);
 }
 
 .row{
   display:flex;
   justify-content:space-between;
-  gap:20px;
   border-bottom:1px solid #00ff66;
-  padding:13px 0;
-  font-size:19px;
-}
-
-.good{
-  color:#9cffc2;
+  padding:14px 0;
+  font-size:21px;
 }
 
 pre{
-  overflow:auto;
-  color:#00ff66;
   border:1px solid #00ff66;
   padding:24px;
-  background:#020b05;
-  font-size:17px;
-  line-height:1.6;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
-}
-
-.mini{
-  border:1px solid #00ff66;
-  padding:22px;
-  background:#020b05;
-}
-
-.mini h3{
-  margin-top:0;
-  font-size:22px;
+  font-size:19px;
+  overflow-x:auto;
+  background:rgba(0,255,102,0.05);
 }
 
 footer{
-  padding:50px 28px;
-  text-align:center;
-  color:#00aa44;
+  margin-top:60px;
+  font-size:18px;
+  opacity:.8;
 }
 
 @media(max-width:700px){
-  .logo{
-    font-size:42px;
-  }
-
-  h1{
-    font-size:36px;
-  }
-
-  h2{
-    font-size:28px;
-  }
-
-  p,li,.row{
-    font-size:17px;
-  }
-
-  .row{
-    flex-direction:column;
-  }
-
-  section{
-    margin:18px;
-    padding:28px 20px;
-  }
+  body{padding:26px;}
+  h1{font-size:44px;}
+  h2{font-size:30px;}
+  p,li,.row{font-size:20px;}
+  nav a{display:inline-block;margin-bottom:16px;}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">WOKE GLOBAL</div>
-  <div class="subtitle">AI Governance • Digital Trust • Post-Quantum Security</div>
+<header id="home">
+  <h1>WOKE GLOBAL</h1>
+  <p>AI Governance • Digital Trust • Post-Quantum Security</p>
+
+  <nav>
+    <a href="#company">Company</a>
+    <a href="#phage">PHAGE</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#pqc">PQC</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#company">Company</a>
-  <a href="#phage">PHAGE</a>
-  <a href="#dashboard">Dashboard</a>
-  <a href="#architecture">Architecture</a>
-  <a href="#pqc">PQC</a>
-  <a href="#roadmap">Roadmap</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="hero">
-  <h1>Building Trustworthy AI Infrastructure</h1>
+<section>
+  <h2>Building Trustworthy AI Infrastructure</h2>
   <p>
-    WOKE GLOBAL develops governance, identity, audit and
-    quantum-safe trust infrastructure for AI Agents,
-    enterprise AI systems and autonomous digital workflows.
+    WOKE GLOBAL develops governance, identity, audit and quantum-safe trust infrastructure
+    for AI Agents, enterprise AI systems and autonomous digital workflows.
   </p>
-  <a class="button" href="#phage">Explore PHAGE v6</a>
+  <a class="btn" href="#phage">Explore PHAGE v6</a>
 </section>
 
 <section id="company">
   <h2>About WOKE GLOBAL</h2>
   <p>
-    WOKE GLOBAL is an AI Governance and Digital Trust company.
-    Our mission is to help organizations deploy AI systems that are
-    transparent, accountable, auditable, secure and compliant.
+    WOKE GLOBAL is an AI Governance and Digital Trust company. Our mission is to help
+    organizations deploy AI systems that are transparent, accountable, auditable, secure
+    and compliant.
   </p>
 </section>
 
 <section id="phage">
   <h2>PHAGE v6</h2>
   <p>
-    PHAGE v6 is WOKE GLOBAL's AI Governance Infrastructure platform.
-    It provides a control layer for AI Agents and automated systems,
-    enabling identity verification, governance enforcement, auditability,
-    risk control and post-quantum security.
+    PHAGE v6 is WOKE GLOBAL's AI Governance Infrastructure platform. It provides a control
+    layer for AI Agents and automated systems, enabling identity verification, governance
+    enforcement, auditability, risk control and post-quantum security.
   </p>
-  <a class="button" href="#dashboard">Launch Platform</a>
+  <a class="btn" href="#dashboard">Launch Platform</a>
 </section>
 
-<section id="why">
+<section>
+  <h2>What is PHAGE?</h2>
+  <p>
+    PHAGE is an AI governance control platform that helps enterprises track what AI Agents
+    did, why they did it, whether the action followed policy, and whether the action can be
+    audited and explained.
+  </p>
+</section>
+
+<section>
   <h2>Why PHAGE?</h2>
 
-  <div class="grid">
-    <div class="mini">
-      <h3>Identity</h3>
-      <p>Verify AI Agent identity, ownership and permission scope.</p>
-    </div>
+  <h3>Identity</h3>
+  <p>Verify AI Agent identity, ownership and permission scope.</p>
 
-    <div class="mini">
-      <h3>Governance</h3>
-      <p>Enforce policies before autonomous systems execute actions.</p>
-    </div>
+  <h3>Governance</h3>
+  <p>Enforce policies before autonomous systems execute actions.</p>
 
-    <div class="mini">
-      <h3>Audit</h3>
-      <p>Record every action for reconstruction, review and accountability.</p>
-    </div>
+  <h3>Audit</h3>
+  <p>Record every action for reconstruction, review and accountability.</p>
 
-    <div class="mini">
-      <h3>PQC</h3>
-      <p>Prepare AI trust systems for the post-quantum security era.</p>
-    </div>
-  </div>
+  <h3>PQC</h3>
+  <p>Prepare AI trust systems for the post-quantum security era.</p>
 </section>
 
 <section id="dashboard" class="dashboard">
   <h2>PHAGE Dashboard</h2>
 
-  <div class="row"><span>Identity Layer</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>Governance Engine</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>Audit System</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>Policy Control</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>Risk Monitor</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>PQC Security Layer</span><span class="good">ONLINE</span></div>
-  <div class="row"><span>Risk Level</span><span class="good">LOW</span></div>
-  <div class="row"><span>Compliance Score</span><span class="good">97%</span></div>
+  <div class="row"><span>Identity Layer</span><span>ONLINE</span></div>
+  <div class="row"><span>Governance Engine</span><span>ONLINE</span></div>
+  <div class="row"><span>Audit System</span><span>ONLINE</span></div>
+  <div class="row"><span>Policy Control</span><span>ONLINE</span></div>
+  <div class="row"><span>Risk Monitor</span><span>ONLINE</span></div>
+  <div class="row"><span>PQC Security Layer</span><span>ONLINE</span></div>
+  <div class="row"><span>Risk Level</span><span>LOW</span></div>
+  <div class="row"><span>Compliance Score</span><span>97%</span></div>
 </section>
 
-<section id="modules">
+<section>
   <h2>Core Modules</h2>
-
   <ul>
     <li>Identity Layer — AI Agent identity verification and permission management.</li>
     <li>Governance Engine — governance rules, compliance policies and decision enforcement.</li>
@@ -282,25 +200,25 @@ footer{
 
 <pre>
 AI Agents
-   │
+   |
    ▼
 Identity Layer
-   │
+   |
    ▼
 Governance Engine
-   │
+   |
    ▼
 Policy Control
-   │
+   |
    ▼
 Audit System
-   │
+   |
    ▼
 Risk Monitor
-   │
+   |
    ▼
 PQC Security Layer
-   │
+   |
    ▼
 Quantum-Safe Trust Framework
 </pre>
@@ -308,9 +226,8 @@ Quantum-Safe Trust Framework
 
 <section id="pqc">
   <h2>PQC Security Layer</h2>
-
   <p>
-    PHAGE v6 integrates Post-Quantum Cryptography to protect AI governance
+    PHAGE v6 integrates Post-Quantum Cryptography concepts to protect AI governance
     infrastructures against future quantum-computing threats.
   </p>
 
@@ -324,95 +241,81 @@ Quantum-Safe Trust Framework
   </ul>
 </section>
 
-<section id="flow">
+<section>
   <h2>AI Agent Governance Flow</h2>
 
 <pre>
 User Request
-   │
+   |
    ▼
 AI Agent
-   │
+   |
    ▼
 Identity Verification
-   │
+   |
    ▼
-Policy Validation
-   │
+Policy Check
+   |
    ▼
-Risk Assessment
-   │
+Risk Evaluation
+   |
    ▼
-Execution Approval
-   │
+Approved / Blocked / Escalated
+   |
    ▼
-Audit Logging
-   │
-   ▼
-Compliance Review
+Immutable Audit Log
 </pre>
 </section>
 
-<section id="usecases">
+<section>
   <h2>Use Cases</h2>
-
   <ul>
-    <li>Financial AI Agent transaction governance.</li>
-    <li>Enterprise AI workflow auditing.</li>
-    <li>Autonomous decision monitoring.</li>
-    <li>AI risk and compliance management.</li>
-    <li>Government digital trust infrastructure.</li>
-    <li>Quantum-safe digital identity systems.</li>
+    <li>Financial AI Agent transaction and compliance monitoring.</li>
+    <li>Enterprise internal AI workflow audit.</li>
+    <li>Automated customer service governance.</li>
+    <li>AI Agent permission control and risk protection.</li>
+    <li>Quantum-safe digital trust infrastructure.</li>
   </ul>
 </section>
 
-<section id="stack">
-  <h2>Technology Stack</h2>
+<section>
+  <h2>WOKE GLOBAL Ecosystem</h2>
 
-  <ul>
-    <li>GitHub Pages prototype hosting.</li>
-    <li>HTML5, CSS3 and JavaScript-ready frontend.</li>
-    <li>Future API Gateway for AI Agent governance.</li>
-    <li>Policy Engine and Audit Layer roadmap.</li>
-    <li>PQC roadmap aligned with quantum-safe security architecture.</li>
-  </ul>
+  <h3>PHAGE</h3>
+  <p>AI Governance Infrastructure.</p>
+
+  <h3>WOKE ID</h3>
+  <p>Digital identity and agent identity framework.</p>
+
+  <h3>WOKE TRUST</h3>
+  <p>Digital trust and audit infrastructure.</p>
+
+  <h3>WOKE PQC</h3>
+  <p>Post-Quantum Security Layer for future digital systems.</p>
 </section>
 
 <section id="roadmap">
   <h2>Roadmap</h2>
-
   <ul>
-    <li>PHAGE v6 Alpha — public prototype on GitHub Pages.</li>
-    <li>PHAGE v6 Beta — interactive dashboard demo.</li>
-    <li>PHAGE v7 — API gateway and agent governance layer.</li>
-    <li>PHAGE Enterprise — compliance, audit and policy console.</li>
-    <li>PHAGE PQC — quantum-safe trust architecture.</li>
-    <li>PHAGE Cloud — managed governance platform.</li>
+    <li>v6 Alpha — GitHub Pages public prototype.</li>
+    <li>v6 Beta — Dashboard demo.</li>
+    <li>v7 — API gateway and agent governance layer.</li>
+    <li>Enterprise — Compliance, audit and policy console.</li>
+    <li>PQC Expansion — Quantum-safe trust infrastructure.</li>
   </ul>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
+  <p>Company: WOKE GLOBAL</p>
+  <p>Product: PHAGE</p>
+  <p>GitHub: p19691221-web</p>
 
-  <p>
-    Company: WOKE GLOBAL<br>
-    Product: PHAGE Platform<br>
-    Focus: AI Governance, Digital Trust and PQC Security<br>
-    GitHub: p19691221-web
-  </p>
-
-  <a class="button" href="mailto:p19691221@gmail.com">
-    Contact WOKE GLOBAL
-  </a>
-
-  <a class="button" href="https://github.com/p19691221-web/-phage-v6" target="_blank">
-    View GitHub
-  </a>
+  <a class="btn" href="mailto:p19691221@gmail.com">Contact WOKE GLOBAL</a>
 </section>
 
 <footer>
   <p>© 2026 WOKE GLOBAL. PHAGE v6 Prototype.</p>
-  <p>AI Governance Infrastructure • Digital Trust • Post-Quantum Security</p>
 </footer>
 
 </body>
