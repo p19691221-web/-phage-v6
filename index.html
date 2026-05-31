@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,171 +8,316 @@
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+html{
+    scroll-behavior:smooth;
 }
 
 body{
+    margin:0;
     background:#000;
     color:#00ff66;
-    font-family:Arial, sans-serif;
-    padding:20px;
-    line-height:1.6;
+    font-family:Arial,sans-serif;
 }
 
-h1{
-    font-size:56px;
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.logo{
+    font-size:70px;
+    font-weight:bold;
+
     text-shadow:
-        0 0 10px #00ff66,
-        0 0 20px #00ff66,
-        0 0 40px #00ff66;
+    0 0 10px #00ff66,
+    0 0 20px #00ff66,
+    0 0 40px #00ff66,
+    0 0 80px #00ff66;
 }
 
 .subtitle{
-    margin-top:10px;
-    margin-bottom:25px;
-    color:#00cc55;
+    margin-top:20px;
+    font-size:22px;
 }
 
 nav{
-    margin-bottom:30px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 nav a{
     color:#00ff66;
     text-decoration:none;
-    margin-right:20px;
+    margin-right:30px;
+    font-size:24px;
     font-weight:bold;
 }
 
 nav a:hover{
-    color:white;
+    text-shadow:0 0 10px #00ff66;
 }
 
-.card{
-    border:1px solid #00ff66;
-    padding:25px;
-    margin-bottom:20px;
+.hero{
+    text-align:center;
+    padding:80px 20px;
 }
 
-.card h2{
-    margin-bottom:15px;
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:22px;
 }
 
 .button{
     display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
     background:#00ff66;
     color:black;
     text-decoration:none;
-    padding:12px 24px;
-    border-radius:5px;
     font-weight:bold;
-    margin-top:10px;
+    border-radius:8px;
 }
 
 .button:hover{
-    background:white;
+    box-shadow:0 0 20px #00ff66;
 }
 
-ul{
-    padding-left:20px;
+.card{
+    border:1px solid #00ff66;
+    padding:40px;
+    margin-bottom:30px;
+
+    box-shadow:
+    0 0 10px rgba(0,255,102,.3);
+}
+
+.card h2{
+    font-size:48px;
+}
+
+.card p,
+.card li{
+    font-size:28px;
+    line-height:1.8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.stat{
+    border:1px solid #00ff66;
+    text-align:center;
+    padding:20px;
+}
+
+.stat h3{
+    font-size:42px;
+    margin:0;
+}
+
+.stat p{
+    margin-top:10px;
 }
 
 footer{
-    margin-top:40px;
     text-align:center;
-    color:#00aa44;
-    font-size:14px;
+    margin-top:80px;
+    padding:40px;
+}
+
+hr{
+    border:1px solid #00ff66;
+}
+
+@media(max-width:768px){
+
+.logo{
+    font-size:48px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.card h2{
+    font-size:34px;
+}
+
+.card p,
+.card li{
+    font-size:22px;
+}
+
+nav a{
+    display:block;
+    margin-bottom:15px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>PHAGE v6</h1>
+<div class="container">
+
+<div class="logo">
+噬菌體 v6
+</div>
 
 <p class="subtitle">
-AI Governance Infrastructure
+人工智慧治理基礎設施
 </p>
 
 <nav>
-<a href="#overview">Overview</a>
-<a href="#about">About</a>
-<a href="#modules">Modules</a>
-<a href="#roadmap">Roadmap</a>
-<a href="#contact">Contact</a>
+<a href="#overview">概述</a>
+<a href="#about">關於</a>
+<a href="#modules">核心模組</a>
+<a href="#roadmap">路線圖</a>
+<a href="#contact">聯絡我們</a>
 </nav>
 
-<div class="card" id="overview">
-<h2>Overview</h2>
+<section class="hero">
+
+<h1>PHAGE v6</h1>
 
 <p>
-PHAGE v6 is a next-generation AI Governance Infrastructure
-designed to provide transparency, accountability,
-auditability, and policy control for advanced AI systems.
+下一代 AI Governance Infrastructure
 </p>
 
-</div>
+<a href="#overview" class="button">
+開始探索
+</a>
 
-<div class="card" id="about">
-<h2>About</h2>
+</section>
+
+<section id="overview" class="card">
+
+<h2>概述</h2>
 
 <p>
-PHAGE v6 establishes a governance framework that enables
-responsible deployment and monitoring of AI technologies.
+PHAGE v6 是新一代人工智慧治理基礎設施，
+旨在建立透明、可稽核、可問責且安全的 AI 生態系。
 </p>
 
+</section>
+
+<div class="stats">
+
+<div class="stat">
+<h3>6</h3>
+<p>治理模組</p>
 </div>
 
-<div class="card" id="modules">
-<h2>Core Modules</h2>
-
-<ul>
-<li>Identity Layer</li>
-<li>Governance Engine</li>
-<li>Audit System</li>
-<li>Policy Control</li>
-<li>Compliance Tracking</li>
-<li>Risk Assessment</li>
-</ul>
-
+<div class="stat">
+<h3>24/7</h3>
+<p>監控系統</p>
 </div>
 
-<div class="card" id="roadmap">
-<h2>Roadmap</h2>
-
-<ul>
-<li>PHAGE v6.1 Release</li>
-<li>Advanced Audit Dashboard</li>
-<li>AI Policy Automation</li>
-<li>Decentralized Governance Layer</li>
-<li>Global Compliance Framework</li>
-</ul>
-
+<div class="stat">
+<h3>100+</h3>
+<p>政策規則</p>
 </div>
 
-<div class="card" id="contact">
-<h2>Contact</h2>
+<div class="stat">
+<h3>99.9%</h3>
+<p>可用性</p>
+</div>
 
-<p>
-GitHub: p19691221-web
-</p>
+</div>
 
 <br>
 
-<a class="button"
-href="https://github.com/p19691221-web/-phage-v6">
-View Source
+<section id="about" class="card">
+
+<h2>關於</h2>
+
+<p>
+PHAGE v6 建立了一套完整的 AI 治理框架，
+提供身份驗證、政策控制、稽核追蹤與治理引擎，
+協助企業安全部署人工智慧系統。
+</p>
+
+</section>
+
+<section id="modules" class="card">
+
+<h2>核心模組</h2>
+
+<ul>
+<li>身份層 Identity Layer</li>
+<li>治理引擎 Governance Engine</li>
+<li>審計系統 Audit System</li>
+<li>政策控制 Policy Control</li>
+<li>風險管理 Risk Management</li>
+<li>合規監控 Compliance Monitor</li>
+</ul>
+
+</section>
+
+<section id="roadmap" class="card">
+
+<h2>路線圖</h2>
+
+<ul>
+<li>PHAGE v6 Core 完成</li>
+<li>AI Policy Engine 整合</li>
+<li>Governance Dashboard</li>
+<li>Audit API 平台</li>
+<li>企業級部署方案</li>
+</ul>
+
+</section>
+
+<section id="contact" class="card">
+
+<h2>聯絡我們</h2>
+
+<p>
+GitHub：p19691221-web
+</p>
+
+<p>
+Email：your@email.com
+</p>
+
+<a
+class="button"
+href="https://github.com/p19691221-web/-phage-v6"
+target="_blank">
+
+GitHub 原始碼
+
 </a>
 
-</div>
+</section>
 
 <footer>
-© 2025 PHAGE v6 • AI Governance Infrastructure
+
+<hr>
+
+<h2>PHAGE v6</h2>
+
+<p>
+AI Governance Infrastructure
+</p>
+
+<p>
+© 2025 PHAGE Project
+</p>
+
 </footer>
+
+</div>
 
 </body>
 </html>
